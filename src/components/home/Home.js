@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactOwlCarousel from "react-owl-carousel/umd/OwlCarousel";
 import "../../assets/style.css";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import $ from "jquery";
-
+import OwlCarousel from "react-owl-carousel-rtl";
 function Home() {
+  const [opecity, setOpacity] = useState("Website");
   //   owl.ReactOwlCarousel({
   //     loop={true}
   //     nav={true}
@@ -40,9 +41,7 @@ function Home() {
     // });
   }, []);
 
-  const MouseEnter = () => {
-
-  };
+  const MouseEnter = () => {};
   owl.on("mousewheel", ".owl-stage", function (e) {
     if (e.deltaY > 0) {
       owl.trigger("next.owl");
@@ -50,7 +49,7 @@ function Home() {
       owl.trigger("prev.owl");
     }
     e.preventDefault();
-    console.log('function worked');
+    console.log("function worked");
   });
   const responsive = {
     0: {
@@ -70,6 +69,11 @@ function Home() {
       items: 7,
     },
   };
+
+  const Opacity = (e) => {
+    setOpacity(e);
+  };
+
   return (
     <>
       <Container id="hero">
@@ -98,10 +102,93 @@ function Home() {
               </div>
               <div className="col-md-6 g-0 owl-carousel-4">
                 <div className="slider-image">
-                  <img src={require("../../assets/images/S1-1.webp")} />
-                  <img src={require("../../assets/images/S1-2.webp")} />
-                  <img src={require("../../assets/images/S1-3.png")} />
-                  <img src={require("../../assets/images/S1-4.webp")} />
+                  <Row>
+                    <Col sm={6}>
+                      <div className="marquee">
+                        <div className="marquee-content">
+                          <div className="marquee-item">
+                            <Row>
+                              <Col>
+                                <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                              </Col>
+                            </Row>
+                          </div>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col sm={6}>
+                      <div className="marquee">
+                        <div className="marquee-content2">
+                          <div className="marquee-item">
+                            <Row>
+                              <Col>
+                                <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                                          <img
+                                  src={require("../../assets/images/S1-1.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-2.webp")}
+                                />
+                              </Col>
+                            </Row>
+                          </div>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+                  
                 </div>
               </div>
             </div>
@@ -109,30 +196,25 @@ function Home() {
         </div>
       </Container>
       <Container fluid className="section_2">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-6 image">
-              <img
-                src={require("../../assets/images/S2-Webso.webp")}
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-6 about">
-              <h2 data-aos="fade-up" className="heading_2">
-                Best <span>Web Designing</span> Agency <br />
-                in the USA with Qualified <br />
-                Experts
-              </h2>
-              <p>
-                Want your business to rule the digital marketplace? For that,
-                you need a bespoke website that speaks for your brand.
-                Websodesign Web Solution is a leading web design agency that
-                designs innovative and effective websites that capture the soul
-                of your business and help with conversions.
-              </p>
-            </div>
+        {/* <div className="container-fluid"> */}
+        <div className="row">
+          <div className="col-md-6 image g-0 bag_prod "></div>
+          <div className="col-md-6 about m-auto">
+            <h2 data-aos="fade-up" className="heading_2">
+              Best <span>Web Designing</span> Agency <br />
+              in the USA with Qualified <br />
+              Experts
+            </h2>
+            <p>
+              Want your business to rule the digital marketplace? For that, you
+              need a bespoke website that speaks for your brand. Websodesign Web
+              Solution is a leading web design agency that designs innovative
+              and effective websites that capture the soul of your business and
+              help with conversions.
+            </p>
           </div>
         </div>
+        {/* </div> */}
       </Container>
       <Container fluid className="section_3">
         <div className="container">
@@ -141,37 +223,48 @@ function Home() {
               <div className="tab">
                 <button
                   className="tablinks"
-                  onmouseover="openCity(event, 'London')"
+                  onMouseEnter={() => Opacity("Website")}
+                  onMouseLeave={() => Opacity()}
                 >
                   <span>01</span> WEBSITE
                 </button>
                 <button
                   className="tablinks"
-                  onmouseover="openCity(event, 'Paris')"
+                  // onmouseover={}
+                  onMouseEnter={() => Opacity("ecommerce")}
+                  onMouseLeave={() => Opacity()}
                 >
                   <span>02</span> ECOMMERCE
                 </button>
                 <button
                   className="tablinks"
-                  onmouseover="openCity(event, 'Tokyo')"
+                  onMouseEnter={() => Opacity("logos")}
+                  onMouseLeave={() => Opacity()}
                 >
                   <span>03</span> LOGOS
                 </button>
                 <button
                   className="tablinks"
-                  onmouseover="openCity(event, 'Portals')"
+                  onMouseEnter={() => Opacity("webportal")}
+                  onMouseLeave={() => Opacity()}
                 >
                   <span>04</span> WEB PORTALS
                 </button>
                 <button
                   className="tablinks"
-                  onmouseover="openCity(event, 'Market')"
+                  onMouseEnter={() => Opacity("digitalmarketing")}
+                  onMouseLeave={() => Opacity()}
                 >
                   <span>05</span> DIGITAL MARKETING
                 </button>
               </div>
 
-              <div id="London" className="tabcontent">
+              <div
+                id="London"
+                className={
+                  "Website" === opecity ? "tabcontent opacity" : "tabcontent"
+                }
+              >
                 <img
                   src={require("../../assets/images/S2-Trendy Urben Mockup.webp")}
                   className="img-fluid"
@@ -182,7 +275,9 @@ function Home() {
 
               <div
                 id="Paris"
-                className="tabcontent"
+                className={
+                  "ecommerce" === opecity ? "tabcontent opacity" : "tabcontent"
+                }
                 data-aos-duration="1000"
                 data-aos="fade-left"
               >
@@ -194,7 +289,9 @@ function Home() {
 
               <div
                 id="Tokyo"
-                className="tabcontent"
+                className={
+                  "logos" === opecity ? "tabcontent opacity" : "tabcontent"
+                }
                 data-aos-duration="1000"
                 data-aos="fade-left"
               >
@@ -206,7 +303,9 @@ function Home() {
 
               <div
                 id="Portals"
-                className="tabcontent"
+                className={
+                  "webportal" === opecity ? "tabcontent opacity" : "tabcontent"
+                }
                 data-aos-duration="1000"
                 data-aos="fade-left"
               >
@@ -218,7 +317,11 @@ function Home() {
 
               <div
                 id="Market"
-                className="tabcontent"
+                className={
+                  "digitalmarketing" === opecity
+                    ? "tabcontent opacity"
+                    : "tabcontent"
+                }
                 data-aos-duration="1000"
                 data-aos="fade-left"
               >
@@ -239,60 +342,62 @@ function Home() {
       </Container>
       <Container fluid className="section_4">
         <div className="container">
-          <div className="row">
-            <div className="col icon_box">
-              <h2 data-aos="fade-up" className="heading_2">
-                Contact Our Professional Brand & <br />
-                Website Design Consultants
-              </h2>
-              <a href="#about" className="get_started">
-                Live Chat
-              </a>
-            </div>
-          </div>
-          <div className="row sec-icon-1">
-            <div className="col-md-3">
-              <div className="icon_bg">
-                <i className="fa fa-rocket"></i>
-                <h3 data-aos="fade-up">15+</h3>
-                <p>Years in Business</p>
+          <div className="row sec_4_row">
+            <div className="m-auto">
+              <div className="col icon_box">
+                <h2 data-aos="fade-up" className="heading_2">
+                  Contact Our Professional Brand & <br />
+                  Website Design Consultants
+                </h2>
+                <a href="#about" className="get_started">
+                  Live Chat
+                </a>
               </div>
-            </div>
-            <div className="col-md-3">
-              <div className="icon_bg">
-                <i className="fa fa-hand-o-right"></i>
-                <h3 data-aos="fade-up">100+</h3>
-                <p>Team Members</p>
+              <div className="row sec-icon-1">
+                <div className="col-md-3">
+                  <div className="icon_bg">
+                    <i className="fa fa-rocket"></i>
+                    <h3 data-aos="fade-up">15+</h3>
+                    <p>Years in Business</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="icon_bg">
+                    <i className="fa fa-hand-o-right"></i>
+                    <h3 data-aos="fade-up">100+</h3>
+                    <p>Team Members</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="icon_bg">
+                    <i className="fa fa-heart"></i>
+                    <h3 data-aos="fade-up">800+</h3>
+                    <p>Happy Clients</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="col-md-3">
-              <div className="icon_bg">
-                <i className="fa fa-heart"></i>
-                <h3 data-aos="fade-up">800+</h3>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-          </div>
-          <div className="row sec-icon-2">
-            <div className="col-md-3">
-              <div className="icon_bg">
-                <i className="fa fa-tv"></i>
-                <h3 data-aos="fade-up">10k+</h3>
-                <p>Projects Done</p>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="icon_bg">
-                <i className="fa fa-users"></i>
-                <h3 data-aos="fade-up">50k+</h3>
-                <p>Hours Worked</p>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="icon_bg">
-                <i className="fa fa-paper-plane"></i>
-                <h3 data-aos="fade-up">24/7</h3>
-                <p>Support Available</p>
+              <div className="row sec-icon-2">
+                <div className="col-md-3">
+                  <div className="icon_bg">
+                    <i className="fa fa-tv"></i>
+                    <h3 data-aos="fade-up">10k+</h3>
+                    <p>Projects Done</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="icon_bg">
+                    <i className="fa fa-users"></i>
+                    <h3 data-aos="fade-up">50k+</h3>
+                    <p>Hours Worked</p>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="icon_bg">
+                    <i className="fa fa-paper-plane"></i>
+                    <h3 data-aos="fade-up">24/7</h3>
+                    <p>Support Available</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -328,14 +433,14 @@ function Home() {
               </h2>
             </div>
           </div>
-          <div className="row g-0"  onFocus={MouseEnter}>
+          <div className="row g-0" onFocus={MouseEnter}>
             <ReactOwlCarousel
               className="owl-carousel-3"
               loop={true}
               nav={true}
               margin={10}
               responsive={responsive2}
-            //   mousewheel
+              //   mousewheel
             >
               <div className="image-slider">
                 <img src={require("../../assets/images/S6-1.webp")} />
@@ -404,7 +509,7 @@ function Home() {
             </ReactOwlCarousel>
           </div>
           <div className="row g-0 owl-carousel-2">
-            <ReactOwlCarousel
+            <OwlCarousel
               className="owl-theme"
               autoplay={true}
               margin={0}
@@ -415,6 +520,8 @@ function Home() {
               dots={false}
               nav={false}
               responsive={responsive}
+              rtlClass="owl-rtl"
+              rtl={true}
             >
               <div className="logo-slider">
                 <img src={require("../../assets/images/8.webp")} />
@@ -437,7 +544,7 @@ function Home() {
               <div className="logo-slider">
                 <img src={require("../../assets/images/14.webp")} />
               </div>
-            </ReactOwlCarousel>
+            </OwlCarousel>
           </div>
           <div className="row g-0 owl-carousel-1">
             <ReactOwlCarousel

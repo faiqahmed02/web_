@@ -7,6 +7,9 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
+    -webkit-box-shadow: inset 0px 5px 10px 1px #bebebe57;
+    box-shadow: inset 0px 5px 100px 30px #bebebe57;
+
 }
 
 a {
@@ -25,6 +28,7 @@ a:hover {
     transition: all 0.5s;
     z-index: 997;
     padding: 20px 0;
+
 }
 
 .number {
@@ -52,6 +56,7 @@ a:hover {
     left: 2%;
     bottom: 3%;
 }
+
 
 @media only screen and (max-width: 650px) {
     .number {
@@ -333,7 +338,8 @@ a:hover {
   --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    min-height: 800px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #hero:before {
@@ -356,6 +362,8 @@ a:hover {
     align-items: center;
     flex-direction: column;
     padding: 0 15px;
+    overflow: hidden;
+    box-shadow: inset 0px 115px 102px 65px #ffffff;
 }
 
 section {
@@ -396,9 +404,20 @@ section {
 
 /* --------banner--------- */
 
-.banner{
+.banner {
     margin: auto;
     margin-top: auto !important;
+    overflow: hidden;
+}
+
+.slider-image {
+    position: absolute;
+    /* height: 100vh; */
+    transform: rotate(15deg);
+    top: 0;
+    left: 30%;
+    z-index: -1;
+
 }
 
 .banner_heading span {
@@ -413,7 +432,7 @@ section {
     color: #ffffff;
     padding: 8px 20px 8px 20px;
     border-radius: 10px;
-    margin: 5px;   
+    margin: 5px;
 }
 
 .logos {
@@ -460,11 +479,77 @@ h1.banner_heading {
 .section_2 {
     background-color: #f5fafd;
     min-height: 600px;
+    /* height: 100vh; */
+
+}
+
+.section_2 .row {
+    height: 100vh;
+
+}
+
+.bag_prod {
+    background-image: url('./images/S2-Webso.webp');
+    /* height: 100%; */
+    /* margin: auto; */
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 80%;
+
+}
+
+/* .marquee{
+    position: absolute;
+    top: -210px;
+    width: 100%;
+} */
+
+.marquee-content {
+    /* display: flex; */
+    animation: scrolling 10s linear infinite;
+}
+
+.marquee-content2 {
+    /* display: flex; */
+    animation: scrolling2 10s linear infinite;
+}
+
+.marquee-item {
+    flex: 0 0 16vw;
+    margin: 0 1vw;
+    /*   flex: 0 0 20vw; */
+    /*   margin: 0 2vw; */
+}
+
+.marquee-item img {
+    display: block;
+    width: 100%;
+    /*   padding: 0 20px; */
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes scrolling2 {
+    0% {
+        transform: translateY(-100vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .about {
     margin: auto;
-    margin-top:auto !important ;
+    margin-top: auto !important;
 }
 
 .image img {
@@ -492,8 +577,31 @@ h1.banner_heading {
 /* ----------------section3--------------- */
 .section_3 {
     background-color: #d9ecf4;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
+}
+
+.section_3 .row {
+    height: 100vh;
+}
+
+.section_3 .row .col {
+    margin: auto;
+}
+
+.section_3 .row {}
+
+.section_3 .opacity {
+    opacity: 1;
+    display: block;
+}
+
+.section_3 .tablinks {
+    font-size: 30px;
+}
+
+.section_3 .tablinks span {
+    font-size: 15px;
 }
 
 .tab {
@@ -504,7 +612,7 @@ h1.banner_heading {
 
 .section_3 button {
     font-family: 'AllRoundGothicW01-Book';
-    font-size: 20px !important;
+    /* font-size: 20px !important; */
     font-weight: 600 !important;
 }
 
@@ -520,12 +628,12 @@ h1.banner_heading {
     text-align: left;
     cursor: pointer;
     font-size: 17px;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .tab button:hover {
     /* background-color: #ddd; */
-    font-size: 30px !important;
+    font-size: 40px !important;
 }
 
 .tabcontent {
@@ -535,6 +643,7 @@ h1.banner_heading {
     border-left: none;
     height: 300px;
     display: none;
+    opacity: 0;
     transition: all 2s ease-in-out;
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;
@@ -559,8 +668,12 @@ h1.banner_heading {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 90px !important;
-    margin-bottom: 90px;
+    /* margin-top: 90px !important;
+    margin-bottom: 90px; */
+}
+
+.section_4 .sec_4_row {
+    height: 100vh;
 }
 
 .sec-icon-1 {
@@ -587,6 +700,8 @@ h1.banner_heading {
     border-radius: 5px;
     text-align: center;
     box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.363);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .icon_bg:hover {
@@ -711,6 +826,8 @@ h1.banner_heading {
     margin-bottom: 50px;
     font-family: 'AllRoundGothicW01-Book';
 }
+
+.section_8{}
 
 .logo-slider img {
     width: auto !important;
@@ -879,6 +996,19 @@ footer
 }
 
 @media only screen and (max-width: 650px) {
+
+    .section_2 .row,
+    .section_3 .row,
+    .section_4 .row,
+    .section_5 .row,
+    .section_6 .row {
+        height: 100%;
+    }
+
+    .section_3 .tab {
+        height: auto;
+    }
+
     .footer_col {
         margin-top: 0px !important;
     }

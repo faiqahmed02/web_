@@ -912,7 +912,7 @@ h1.banner_heading {
 
 .stiky-test {
     position: sticky;
-    top: 2%;
+    top: 120px;
 }
 
 .name-rating h3 {
@@ -928,7 +928,7 @@ h1.banner_heading {
     border-radius: 20px;
     margin-bottom: 30px;
     position: sticky;
-    top: 20px;
+    top: 120px;
 }
 
 .name-rating {

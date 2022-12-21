@@ -11,7 +11,7 @@ function Home() {
   //     nav={true}
   //     margin={10}
   //     rtl={true}
-
+  // OwlCarousel.next()
   const responsive2 = {
     0: {
       items: 1,
@@ -44,12 +44,13 @@ function Home() {
   const MouseEnter = () => {};
   owl.on("mousewheel", ".owl-stage", function (e) {
     if (e.deltaY > 0) {
-      owl.trigger("next.owl");
+      owl.next();
+      console.log("function worked");
     } else {
-      owl.trigger("prev.owl");
+      owl.prev();
     }
     e.preventDefault();
-    console.log("function worked");
+   
   });
   const responsive = {
     0: {
@@ -102,7 +103,7 @@ function Home() {
               </div>
               <div className="col-md-6 g-0 owl-carousel-4">
                 <div className="slider-image">
-                  <Row>
+                  <Row className="g-0">
                     <Col sm={6}>
                       <div className="marquee">
                         <div className="marquee-content">
@@ -115,29 +116,17 @@ function Home() {
                                 <img
                                   src={require("../../assets/images/S1-2.webp")}
                                 />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
+                                <img
+                                  src={require("../../assets/images/S1-3.webp")}
                                 />
                                 <img
-                                  src={require("../../assets/images/S1-2.webp")}
-                                />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
+                                  src={require("../../assets/images/S1-4.webp")}
                                 />
                                 <img
-                                  src={require("../../assets/images/S1-2.webp")}
-                                />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
+                                  src={require("../../assets/images/S1-5.webp")}
                                 />
                                 <img
-                                  src={require("../../assets/images/S1-2.webp")}
-                                />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
-                                />
-                                <img
-                                  src={require("../../assets/images/S1-2.webp")}
+                                  src={require("../../assets/images/S1-6.webp")}
                                 />
                               </Col>
                             </Row>
@@ -152,34 +141,22 @@ function Home() {
                             <Row>
                               <Col>
                                 <img
+                                  src={require("../../assets/images/S1-4.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-5.webp")}
+                                />
+                                <img
+                                  src={require("../../assets/images/S1-6.webp")}
+                                />
+                                <img
                                   src={require("../../assets/images/S1-1.webp")}
                                 />
                                 <img
                                   src={require("../../assets/images/S1-2.webp")}
                                 />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
-                                />
                                 <img
-                                  src={require("../../assets/images/S1-2.webp")}
-                                />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
-                                />
-                                <img
-                                  src={require("../../assets/images/S1-2.webp")}
-                                />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
-                                />
-                                <img
-                                  src={require("../../assets/images/S1-2.webp")}
-                                />
-                                          <img
-                                  src={require("../../assets/images/S1-1.webp")}
-                                />
-                                <img
-                                  src={require("../../assets/images/S1-2.webp")}
+                                  src={require("../../assets/images/S1-3.webp")}
                                 />
                               </Col>
                             </Row>
@@ -188,7 +165,6 @@ function Home() {
                       </div>
                     </Col>
                   </Row>
-                  
                 </div>
               </div>
             </div>
@@ -433,14 +409,20 @@ function Home() {
               </h2>
             </div>
           </div>
-          <div className="row g-0" onFocus={MouseEnter}>
-            <ReactOwlCarousel
+          <div
+            className="row g-0"
+            // onFocus={MouseEnter}
+          >
+            <OwlCarousel
               className="owl-carousel-3"
-              loop={true}
+              loop={false}
               nav={true}
               margin={10}
               responsive={responsive2}
-              //   mousewheel
+              rtl={true}
+              rtlClass={"owl-rtl"}
+              mousewheel
+              // mousewheel
             >
               <div className="image-slider">
                 <img src={require("../../assets/images/S6-1.webp")} />
@@ -457,7 +439,7 @@ function Home() {
               <div className="image-slider">
                 <img src={require("../../assets/images/S6-1.webp")} />
               </div>
-            </ReactOwlCarousel>
+            </OwlCarousel>
           </div>
         </div>
       </Container>
@@ -508,6 +490,7 @@ function Home() {
               </div>
             </ReactOwlCarousel>
           </div>
+          
           <div className="row g-0 owl-carousel-2">
             <OwlCarousel
               className="owl-theme"

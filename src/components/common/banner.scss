@@ -1,0 +1,78 @@
+@import '../../variable.scss';
+
+.banner_services {
+    color: white;
+
+    // height: 100vh;
+    .banner_row_services {
+        height: 100vh;
+
+        .banner_col_services {
+            h1 {
+                font-size: $h1size;
+                font-weight: $h1weight;
+                color: black;
+
+                span {
+                    color: #029de0;
+                }
+            }
+
+            p {
+                color: black;
+            }
+
+            margin: auto;
+
+            button {
+                border: none;
+            }
+
+            .banner_form {
+                background-image: url('../../assets/images/Services/Logo/Foam-1.webp');
+                padding: 40px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                // height: 527px;
+                width: 75%;
+                border-radius: 30px;
+                margin: auto;
+
+                h3 {
+                    position: relative;
+                    width: 80%;
+                    margin: auto;
+                }
+
+                h3::before {
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 3px;
+                    background-color: white;
+                    margin: auto;
+                    top: 50%;
+                    left: -40px;
+                }
+
+                input {
+                    width: 100%;
+                    border: none;
+                    background-color: white;
+                    padding: 15px;
+                    border-radius: 10px;
+                    margin: 10px 0px;
+                }
+
+                input[type="submit"] {
+                    background-color: #029de0;
+                }
+            }
+
+            .banner_img {
+                margin: 13px 0px;
+            }
+        }
+    }
+}

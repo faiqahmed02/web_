@@ -602,7 +602,7 @@ function Home() {
             </div>
           </div>
           <div className="row text-center">
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-1.webp")}
@@ -612,7 +612,7 @@ function Home() {
                 Networking
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-2.webp")}
@@ -622,7 +622,7 @@ function Home() {
                 Marketing
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-3.webp")}
@@ -632,7 +632,7 @@ function Home() {
                 Development
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-4.webp")}
@@ -644,7 +644,7 @@ function Home() {
             </div>
           </div>
           <div className="row text-center icon-ctr">
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-5.webp")}
@@ -654,7 +654,7 @@ function Home() {
                 Service
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-6.webp")}
@@ -664,7 +664,7 @@ function Home() {
                 Service
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-7.webp")}
@@ -674,7 +674,7 @@ function Home() {
                 Service
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-8.webp")}
@@ -686,7 +686,7 @@ function Home() {
             </div>
           </div>
           <div className="row text-center">
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-9.webp")}
@@ -696,7 +696,7 @@ function Home() {
                 Service
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-10.webp")}
@@ -706,7 +706,7 @@ function Home() {
                 Ticket
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-11.webp")}
@@ -716,7 +716,7 @@ function Home() {
                 Service
               </h3>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 col-6">
               <img
                 className="vector_img"
                 src={require("../../assets/images/icon-12.webp")}

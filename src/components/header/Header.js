@@ -29,8 +29,8 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link" href="#services">
-                    Services
+                  <a className="nav-link" href='/services/logo'>
+                    Logo
                   </a>
                 </li>
                 <li>

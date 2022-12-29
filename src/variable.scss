@@ -1,3 +1,10 @@
+@import url('http://fonts.cdnfonts.com/css/poppins');
+@import url('http://db.onlinewebfonts.com/c/dd266e8a31d9cbae26395f9d100e4e4b?family=AllRoundGothicW01-Book');
+
 $h1size: 4rem;
 $h1weight: 400;
 $main_color: #029de0;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'AllRoundGothicW01-Book';
+}
+$breakpoint-tablet: 768px;

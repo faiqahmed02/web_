@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import Banner from "../../common/Banner";
 import FifthSection from "../../common/FifthSection";
 import ForthSection from "../../common/ForthSection";
@@ -6,17 +6,17 @@ import SecondSection from "../../common/SecondSection";
 import SixthSection from "../../common/SixthSection";
 import ThirdSection from "../../common/ThirdSection";
 
-function Logo() {
+function EcommerceWebsite() {
   return (
     <>
-      <Banner />
-      <SecondSection />
-      <ThirdSection />
-      <ForthSection />
-      <FifthSection />
-      <SixthSection />
-    </>
-  );
+    <Banner />
+    <SecondSection />
+    <ThirdSection />
+    <ForthSection />
+    <FifthSection />
+    <SixthSection />
+  </>
+  )
 }
 
-export default Logo;
+export default EcommerceWebsite

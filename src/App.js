@@ -13,6 +13,8 @@ import {
   Navigate,
 } from "react-router-dom";
 import Logo from "./components/services/logo/Logo";
+import Website from "./components/services/website/Website";
+import EcommerceWebsite from "./components/services/website/EcommerceWebsite";
 
 function App() {
   useEffect(() => {
@@ -26,6 +28,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/logo" element={<Logo />} />
+          <Route path="/services/website" element={<Website />} />
+          <Route path="/services/ecommerce-wesbite" element={<EcommerceWebsite />} />
         </Routes>
         <Footer />
       </Router>

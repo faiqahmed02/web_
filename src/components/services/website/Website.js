@@ -6,7 +6,7 @@ import SecondSection from "../../common/SecondSection";
 import SixthSection from "../../common/SixthSection";
 import ThirdSection from "../../common/ThirdSection";
 
-function Logo() {
+function Website() {
   return (
     <>
       <Banner />
@@ -19,4 +19,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+export default Website;

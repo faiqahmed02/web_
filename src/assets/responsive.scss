@@ -1,0 +1,42 @@
+@import '../variable.scss';
+@media (max-width: $breakpoint-tablet) {
+    .slick-arrow{
+        display: none !important;
+    }
+    .banner_services {
+         .banner_row_services{
+            padding-top: 60px;
+            height: auto !important;
+            img{
+                width: 100%;
+            }
+            .banner_form{
+                margin: 0px !important;
+                width: 100% !important;
+            }
+        }
+    }
+    .second_section_container{
+        padding-top: 40px;
+        .bg_img{
+            height: 200px;
+        }
+    }
+
+    .forth_section_container{
+        overflow: hidden;
+        .package{
+            // padding:auto 10px !important;
+            // padding-left: 10px !important;
+            // padding-right: 10px;
+            // // margin: 0px 10px;
+            // width: 100%;
+            .package_list{
+                // margin: auto 0px;
+                text-align: left !important;
+                list-style: circle;
+                
+            }
+        }
+    }
+}

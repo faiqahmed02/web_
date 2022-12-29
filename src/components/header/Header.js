@@ -9,13 +9,13 @@ function Header() {
     >
       <div className="container justify-content-between">
         <div className="row">
-          <div className="col">
+          <div className="col-sm-3 m-auto">
             <img
               className="logo"
               src={require("../../assets/images/Main Banner Logo.webp")}
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-9">
             <nav id="navbar" className="navbar">
               <ul>
                 <li>
@@ -31,6 +31,16 @@ function Header() {
                 <li>
                   <a className="nav-link" href='/services/logo'>
                     Logo
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link" href='/services/website'>
+                    Wesbite
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link" href='/services/ecommerce-wesbite'>
+                    Ecommerce
                   </a>
                 </li>
                 <li>

@@ -1,0 +1,20 @@
+@import '../../variable.scss';
+.sexth_section_conatiner{
+    padding: 30px 0px;
+    .sexth_section_row{
+        .sexth_section_col{
+            margin: auto;
+            .sild_style{
+                color: white;
+                padding: 30px;
+                background: rgb(2, 157, 224);
+                background: linear-gradient(121deg, rgba(2, 157, 224, 1) 0%, rgba(2, 223, 224, 1) 100%);
+                transition: all 2s ease-in-out;
+                box-shadow: 0px 4px 11px 4px #00000094;
+                border-radius: 12px;
+                margin: 20px;
+            }
+         
+        }
+    }
+}

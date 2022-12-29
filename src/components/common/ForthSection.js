@@ -5,11 +5,11 @@ import Slider from "react-slick";
 import Information from "../../Objects/PackageObject";
 
 function ForthSection() {
-  const settings = {
-    className: "center",
+  const settings1 = {
+    // className: "center",
     centerMode: true,
     infinite: true,
-    // centerPadding: "60px",
+    centerPadding: "20px",
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -59,7 +59,7 @@ function ForthSection() {
         </Col>
       </Row>
       <Row>
-        <Slider {...settings}>
+        <Slider {...settings1}>
           {Data.map((d, i) => {
             return (
               <div className="package">

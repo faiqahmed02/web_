@@ -1,41 +1,89 @@
 @import '../variable.scss';
+
 @media (max-width: $breakpoint-tablet) {
-    .slick-arrow{
+    h2,h3{
+        font-size: 2.5813rem !important;
+    }
+    h4{
+        font-size: 1.8rem !important;
+    }
+    .slick-arrow {
         display: none !important;
     }
+
     .banner_services {
-         .banner_row_services{
+        .banner_row_services {
             padding-top: 60px;
             height: auto !important;
-            img{
+
+            img {
                 width: 100%;
             }
-            .banner_form{
+
+            .banner_form {
                 margin: 0px !important;
                 width: 100% !important;
             }
         }
     }
-    .second_section_container{
+
+    .second_section_container {
         padding-top: 40px;
-        .bg_img{
+
+        .bg_img {
             height: 200px;
         }
     }
 
-    .forth_section_container{
+    .third_section_container{
+        h3, p{
+            width: 100% !important;
+        }
+        .third_section_inner_div{
+            display: flex;
+            flex-wrap: wrap;
+
+            >div{
+                margin: auto;
+                width: 100px;
+                span{
+                    font-weight: 700 !important;
+
+                }
+                // width: 100%;
+            }
+        }
+    }
+
+    .forth_section_container {
         overflow: hidden;
-        .package{
+
+        .package {
             // padding:auto 10px !important;
             // padding-left: 10px !important;
             // padding-right: 10px;
             // // margin: 0px 10px;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+
             // width: 100%;
-            .package_list{
+            .package_list {
                 // margin: auto 0px;
                 text-align: left !important;
                 list-style: circle;
-                
+
+            }
+        }
+    }
+
+    .sexth_section_conatiner {
+        .sexth_section_row {
+            .sexth_section_col {
+                h3 {
+                    font-size: 3.1813rem;
+                }
             }
         }
     }

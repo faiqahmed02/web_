@@ -50,7 +50,6 @@ function Home() {
       owl.prev();
     }
     e.preventDefault();
-   
   });
   const responsive = {
     0: {
@@ -490,7 +489,7 @@ function Home() {
               </div>
             </ReactOwlCarousel>
           </div>
-          
+
           <div className="row g-0 owl-carousel-2">
             <OwlCarousel
               className="owl-theme"

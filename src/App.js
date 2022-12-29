@@ -29,7 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services/logo" element={<Logo />} />
           <Route path="/services/website" element={<Website />} />
-          <Route path="/services/ecommerce-wesbite" element={<EcommerceWebsite />} />
+          <Route path="/services/ecommercewesbite" element={<EcommerceWebsite />} />
         </Routes>
         <Footer />
       </Router>

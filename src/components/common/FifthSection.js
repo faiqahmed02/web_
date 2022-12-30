@@ -60,7 +60,7 @@ function FifthSection() {
           // onFocus={MouseEnter}
         >
           <Col sm={12} lg={12}>
-            <ul className="portfolio_nav d-flex justify-content-center m-auto pb-5">
+            <ul className="portfolio_nav d-flex justify-content-center m-auto pb-5 flex-wrap">
               <li>
                 <Button onClick={() => btnevent('website')} className={btnActive === 'website' ? 'active' : ""} variant="primary">Website</Button>
               </li>

@@ -134,13 +134,15 @@
 
                 .testimonoals_slider {
 
-                    height: 252px;
+                    height: auto;
+                    padding-bottom: 40px !important;
 
                     .testimonoals_slider_inner_div {
 
                         img {
 
-                            top: 168px;
+                            top: 0;
+                            width: 50px;
                         }
 
                         .rate {

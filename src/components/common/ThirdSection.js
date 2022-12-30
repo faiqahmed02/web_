@@ -17,6 +17,11 @@ function ThirdSection() {
             </p>
           </Col>
         </Row>
+        <Row>
+          <h4>
+            <strong>Served</strong>
+          </h4>
+        </Row>
       </Container>
       {/* </Row> */}
       <Row className="third_section_row p-0 m-0">
@@ -24,20 +29,21 @@ function ThirdSection() {
           <div className="third_section_inner_div">
             <div>
               <h4>
-                <span>Served</span>
-                <br />7<br />
+                7<br />
                 <span>Years</span>
               </h4>
             </div>
             <div>
               <h4>
-                16<br />
+                16
+                <br />
                 <span>Industries</span>
               </h4>
             </div>
             <div>
               <h4>
-                14<br />
+                14
+                <br />
                 <span>Countries</span>
               </h4>
             </div>

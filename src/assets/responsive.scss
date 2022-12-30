@@ -1,12 +1,19 @@
 @import '../variable.scss';
 
 @media (max-width: $breakpoint-tablet) {
-    h2,h3{
+    .heading_2 {
+        font-size: 28px !important;
+    }
+
+    h2,
+    h3 {
         // font-size: 2.5813rem !important;
     }
-    h4{
+
+    h4 {
         // font-size: 1.8rem !important;
     }
+
     .slick-arrow {
         display: none !important;
     }
@@ -35,21 +42,26 @@
         }
     }
 
-    .third_section_container{
-        h3, p{
+    .third_section_container {
+
+        h3,
+        p {
             width: 100% !important;
         }
-        .third_section_inner_div{
+
+        .third_section_inner_div {
             display: flex;
             flex-wrap: wrap;
 
-            >div{
+            >div {
                 margin: auto;
                 width: 100px;
-                span{
+
+                span {
                     font-weight: 700 !important;
 
                 }
+
                 // width: 100%;
             }
         }
@@ -80,11 +92,90 @@
 
     .sexth_section_conatiner {
         .sexth_section_row {
+            >span {
+                display: none;
+            }
+
             .sexth_section_col {
+
+
                 h3 {
                     font-size: 3.1813rem;
                 }
             }
+        }
+    }
+
+    .seven_section_container {
+
+        .seven_section_row {
+            .seven_section_col {
+
+                h3 {}
+
+                .slick-arrow {}
+
+                .slick-prev {}
+
+                .slick-next {}
+
+                .testimonoals_slider {
+
+                    height: 252px;
+
+                    .testimonoals_slider_inner_div {
+
+                        img {
+
+                            top: 168px;
+                        }
+
+                        .rate {
+                            margin: 20px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .eight_section_container {
+        .eight_section_row:nth-child(3) {
+            flex-direction: column-reverse;
+        }
+
+        .eight_section_row:last-child {
+            flex-direction: column-reverse;
+        }
+
+        // .eight_section_row:nth-child(3){
+        //     flex-direction: column-reverse;
+        // }
+        .eight_section_row {
+            text-align: left;
+
+            .eight_section_col {
+                text-align: left !important;
+                padding: 20px 10px;
+
+                .content_div {
+                    width: 100% !important;
+                }
+
+                .eight_bg_img_1,
+                .eight_bg_img_2,
+                .eight_bg_img_3,
+                .eight_bg_img_4 {
+                    background-size: 100% !important;
+                    height: 200px !important;
+
+                }
+
+            }
+        }
+
+        span {
+            border: none !important;
         }
     }
 }

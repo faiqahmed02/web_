@@ -50,7 +50,7 @@ function SevenSection() {
       <Container>
         <Row className="seven_section_row">
           <Col sm={12} lg={4} className="seven_section_col">
-            <h3 className="heading_2">But don't take our word for it</h3>
+            <h3>But don't take our word for it</h3>
             <p>Hear it from the clients, their real experiences.</p>
           </Col>
         </Row>

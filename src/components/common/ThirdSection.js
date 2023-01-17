@@ -2,18 +2,16 @@ import React from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
 import "./thirdsection.scss";
 
-function ThirdSection() {
+function ThirdSection(props) {
   return (
     <Container fluid className="g-0 third_section_container">
       {/* <Row> */}
       <Container>
         <Row>
           <Col>
-            <h3>We are an award winning global studio</h3>
+            <h3>{props.tsheading} </h3>
             <p>
-              working with clients from all over the world and building
-              successful brands with empathy and creativity with our
-              comprehensive range of services
+              {props.tspara}
             </p>
           </Col>
         </Row>

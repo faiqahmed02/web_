@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import "./forthsection.scss";
 import Slider from "react-slick";
 import Information from "../../Objects/PackageObject";
+import { BsCheckSquareFill } from "react-icons/bs";
 
 function ForthSection() {
   const settings1 = {
@@ -63,14 +64,15 @@ function ForthSection() {
           {Data.map((d, i) => {
             return (
               <div className="package">
+                {/* <img */}
                 <h3 className="package_cat">{d.data.Package.Cat}</h3>
-                <h4 className="package_price">$ {d.data.Package.price}</h4>
+                <h4 className="package_price">${d.data.Package.price}</h4>
                 <p className="package_description">
                   {d.data.Package.description}
                 </p>
                 <ul className="package_list">
                   {d.data.Package.list.map((d, i) => {
-                    return <li>{d}</li>;
+                    return <li><BsCheckSquareFill /> {d}</li>;
                   })}
                 </ul>
                 <button className="package_btn">Get Started</button>

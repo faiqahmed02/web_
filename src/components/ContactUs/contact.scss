@@ -1,0 +1,96 @@
+@import '../../variable.scss';
+
+.contact_page {
+    height: 100%;
+    padding-top: 80px;
+
+    .row {
+        height: 100%;
+
+        .col-sm-12 {
+            margin: auto;
+
+            .bg-image {
+                background-image: url(../../assets/images/contact-img/Color-Fill.webp);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 700px;
+                padding: 120px 50px;
+                h1 {
+                    font-family: 'poppins';
+                    font-size: 50px;
+                    color: white;
+                }
+                p {
+                    font-size: 16px;
+                    color: white;
+                }
+                .img-box{
+                    display: flex;
+                    margin-bottom: 30px;
+                }
+                h3 {
+                    font-size: 16px;
+                    color: white;
+                }
+                span {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: white;
+                }
+                .Image{
+                    margin-right: 12px;
+                }
+            }
+            .cform{
+                padding: 120px 80px;
+            }
+            label {
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 0px !important;
+                text-align: justify;
+                width: auto;
+                float: left;
+            }
+
+            .hs-input {
+                height: 76px;
+                width: 100% !important;
+                padding: 0 20px !important;
+                color: #fff;
+                border: 2px solid transparent;
+                background-color: #009de0;
+                font-size: 18px;
+                border-radius: none !important;
+                margin-bottom: 20px;
+            }
+            ::placeholder{
+                color: #fff;
+            }
+
+            .sub_btn {
+                width: 30%;
+                border-radius: 0;
+                background-color: #009de0;
+                color: #fff;
+                height: 66px;
+                letter-spacing: 1px;
+                font-size: 14px;
+                cursor: pointer;
+                border: none !important;
+
+            }
+        }
+    }
+}
+
+.map-image{
+    background-image: url(../../assets/images/contact-img/layer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}

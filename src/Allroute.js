@@ -8,6 +8,8 @@ import Logo from "./components/services/logo/Logo";
 import Website from "./components/services/website/Website";
 import EcommerceWebsite from "./components/services/website/EcommerceWebsite";
 import Home from "./components/home/Home";
+import Contact from "./components/ContactUs/Contact";
+import Portfolio from "./components/services/branding/Portfolio";
 
 
 function Allroute() {
@@ -17,6 +19,8 @@ function Allroute() {
       <Route path="/services/logo" element={<Logo />} />
       <Route path="/services/website" element={<Website />} />
       <Route path="/services/ecommercewesbite" element={<EcommerceWebsite />} />
+      <Route path="/contactus" element={<Contact />} />
+      <Route path="/services/portfolio" element={<Portfolio />} />
     </Routes>
   );
 }

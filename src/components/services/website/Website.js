@@ -19,7 +19,7 @@ people, comprehend their behaviours, and create user journeys that make it easy 
 users to do their desired activities. Additionally, we offer our clients a fantastic web
 structure that makes them stand out in the marketplace." />
       <ThirdSection tsheading="We are an award winning global studio" tspara="working with clients from all over the world and building successful brands
-with empathy and creativity with our comprehensive range of services" />
+with empathy and creativity with our comprehensive range of services"  />
       <ForthSection />
       <FifthSection />
       <SixthSection />

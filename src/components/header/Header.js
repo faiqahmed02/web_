@@ -45,7 +45,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <a className="nav-link" href="#portfolio">
+                  <a className="nav-link" href="/services/portfolio">
                     Portfolio
                   </a>
                 </li>
@@ -55,9 +55,9 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link" href="#contact">
+                  <Link className="nav-link" to="/contactus">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle"></i>
